@@ -6,7 +6,6 @@ def sort(array, radix=10):
   if len(array) == 0:
     return array
 
-  # Determine minimum and maximum values
   minValue = array[0];
   maxValue = array[0];
   for i in range(1, len(array)):
@@ -46,3 +45,5 @@ def countingSortByDigit(array, radix, exponent, minValue):
 
   return output
 print(sort(array))
+
+### http://www.growingwiththeweb.com/sorting/radix-sort-lsd/ was used as a reference for much of this code
